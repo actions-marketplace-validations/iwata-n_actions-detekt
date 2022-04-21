@@ -1,0 +1,2 @@
+# actions-detekt
+Run detekt
