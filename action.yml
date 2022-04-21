@@ -1,0 +1,18 @@
+name: 'Run detekt'
+description: 'run detekt'
+inputs:
+  rule:
+    description: 'rule'
+    default: '/detekt_rule.xml'
+  result:
+    description: 'result'
+    default: './detekt_result.xml'
+  workdir:
+    description: 'workdir'
+    default: '.'
+  filter:
+    description: 'filter'
+    default: '*.kt'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
